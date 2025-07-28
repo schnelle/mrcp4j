@@ -8,7 +8,7 @@ MRCP clients and/or servers.
 ## Requirements
 
 - JAVA 8
-- Gradle 7.3.1
+- Gradle 8.5.0
 
 ## Include from from Maven
 
