@@ -13,7 +13,6 @@ Generate a changelog for a specific milestone:
 ```bash
 ./gradlew generateChangelog -Pchangelog.github.milestone="1.0.0"
 ```
-
 ### Configuration
 
 The plugin can be configured in the `build.gradle` file using the `changelog` extension block:
@@ -30,31 +29,6 @@ changelog {
 ### Configuration Properties
 
 The following properties can be configured in the extension block or passed via command line:
-
-- `changelog.github.repo` - GitHub repository in format `owner/repo` (default: `schnelle/mrcp4j`)
-- `changelog.github.milestone` - Milestone name to generate changelog for (required)
-- `changelog.github.token` - GitHub personal access token for API authentication (optional but recommended)
-
-### Examples
-
-**Generate changelog for milestone "0.3.1":**
-```bash
-./gradlew generateChangelog -Pchangelog.github.milestone="0.3.1"
-```
-
-**Generate changelog with custom repository:**
-```bash
-./gradlew generateChangelog \
-  -Pchangelog.github.repo="myorg/myrepo" \
-  -Pchangelog.github.milestone="2.0.0"
-```
-
-**Generate changelog with authentication (recommended for private repos or to avoid rate limits):**
-```bash
-./gradlew generateChangelog \
-  -Pchangelog.github.milestone="0.3.1" \
-  -Pchangelog.github.token="ghp_xxxxxxxxxxxx"
-```
 
 **Configure in build.gradle and run without parameters:**
 ```gradle

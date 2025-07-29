@@ -101,11 +101,8 @@ javadoc {
         options.addBooleanOption('html5', true)
     }
 }
-
 // Configure the changelog plugin
 changelog {
     githubRepo = 'schnelle/mrcp4j'
     outputDir = "${buildDir}/changelog"
 }
-
-
