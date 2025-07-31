@@ -11,6 +11,8 @@ repositories {
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
+    testImplementation gradleTestKit()
+    testImplementation 'junit:junit:4.13.2'
 }
 
 gradlePlugin {

@@ -95,7 +95,7 @@ class ChangelogTask extends DefaultTask {
         return jsonSlurper.parseText(jsonText)
     }
     
-    private String categorizeIssue(issue) {
+    private String categorizeIssue(def issue) {
         def labels = issue.labels?.collect { it.name } ?: []
         
         // Categorize based on labels
